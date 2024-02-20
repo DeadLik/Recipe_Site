@@ -1,0 +1,10 @@
+INFO 2024-02-20 16:04:48,739 autoreload 8836 15256 Watching for file changes with StatReloader
+INFO 2024-02-20 16:07:30,604 autoreload 13956 9768 Watching for file changes with StatReloader
+WARNING 2024-02-20 16:07:35,540 log 13956 2904 Not Found: /
+WARNING 2024-02-20 16:07:35,541 basehttp 13956 2904 "GET / HTTP/1.1" 404 2303
+WARNING 2024-02-20 16:07:36,913 log 13956 2904 Not Found: /
+WARNING 2024-02-20 16:07:36,913 basehttp 13956 2904 "GET / HTTP/1.1" 404 2303
+WARNING 2024-02-20 16:07:37,120 log 13956 2904 Not Found: /favicon.ico
+WARNING 2024-02-20 16:07:37,121 basehttp 13956 2904 "GET /favicon.ico HTTP/1.1" 404 2354
+INFO 2024-02-20 16:07:58,778 basehttp 13956 2904 "GET /recipesiteapp HTTP/1.1" 301 0
+INFO 2024-02-20 16:07:58,785 basehttp 13956 4928 "GET /recipesiteapp/ HTTP/1.1" 200 325
