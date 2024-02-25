@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+
+{% block content %}
+    <h1 class="user__menu">Топ рецептов</h1>
+    <div class="nav__menu">
+        <a class="link__menu_h" href="{% url 'new_recipe' %}">Add recipe</a>
+        <a class="link__menu_h" href="{% url 'all_recipe' %}">Update recipe</a>
+    </div>
+    {% for result in results %}
+        <p>{{ result }}</p>
+    {% endfor %}
+
+{% endblock %}

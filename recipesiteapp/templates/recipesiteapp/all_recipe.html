@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div class="user__menu"><h2>Выберите рецепт для редактирования</h2></div>
+        {% for tit in title %}
+            <li>
+                {{ tit.id }} {{ tit }}
+                <a href="{% url 'recipe_page' tit.id %}">Посмотреть</a>
+                <a href="{% url 'update_recipe' tit.id %}">Редактировать</a>
+            </li>
+        {% endfor %}
+
+{% endblock %}

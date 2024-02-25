@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+
+
+{% block content %}
+    <h2>Рецепт</h2>
+    <h4>{{ recipe.title }}</h4>
+    <p>{{ recipe.description }}</p>
+    <p>{{ recipe.steps_cooking }}</p>
+    <p>{{ recipe.time_for_cooking }}</p>
+    {% if recipe.photo.url != None %}
+        <img src="{{ recipe.photo.url }}" alt="recipe">
+    {% endif %}
+    <h5>Автор: {{ recipe.author }}</h5>
+    <a href="{% url 'all_recipe' %}">Назад</a>
+{% endblock %}

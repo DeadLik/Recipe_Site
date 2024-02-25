@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="user__menu"><h1>Home page</h1></div>
+    <hr>
+
+    <div class="nav__menu">
+        {% if user.is_authenticated %}
+            <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">logout</button>
+            </form>
+        {% else %}
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <button type="submit">login</button>
+            </form>
+            </div>
+            <a class="user__menu" href="{% url 'register' %}">Register</a>
+        {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="user__menu"><h1>Register</h1></div>
+    <hr>
+
+    <div class="nav__menu">
+        <form action="{% url 'register' %}" method="post">
+            {{ form }}
+            {% csrf_token %}
+            <button type="submit">submit</button>
+        </form>
+    </div>
+{% endblock %}
